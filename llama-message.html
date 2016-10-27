@@ -1,4 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="llama-message-styles.html">
 
 <!--
 `llama-message`
@@ -9,12 +10,13 @@ Single message to show an interesting llama fact
 
 <dom-module id="llama-message">
   <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello [[prop1]]</h2>
+    <style include="llama-message-styles"></style>
+
+    <div>
+      <div class="close">&times;</div>
+      <img src="llama-bubble.png">
+      <div class="message">[[message]]</div>
+    </div>
   </template>
 
   <script>
@@ -23,9 +25,9 @@ Single message to show an interesting llama fact
       is: 'llama-message',
 
       properties: {
-        prop1: {
+        message: {
           type: String,
-          value: 'llama-message',
+          value: 'LLamasoft Rules',
         },
       },
 

@@ -1,0 +1,35 @@
+<dom-module id="llama-message-styles">
+    <template>
+        <style>
+
+            .close {
+                color: red;
+                display: inline-block;
+                position: absolute;
+                transition: ease 0.25s all;
+                font-size: 20px;
+            }
+
+            .close:hover {
+                -webkit-transform: translate(50%, -50%) rotate(180deg);
+                transform:rotate(180deg);
+                cursor: pointer;
+            }
+
+            .message {
+                position: relative;
+                top: -150px;
+                left: 300px;
+                width: 160px;
+                text-overflow: clip;
+                overflow: visible;
+                z-index: 100;
+            }
+
+            .background {
+                background-color: red;
+            }
+
+        </style>
+    </template>
+</dom-module>
