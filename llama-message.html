@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`llama-message`
+Single message to show an interesting llama fact
+
+@demo demo/index.html 
+-->
+
+<dom-module id="llama-message">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'llama-message',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'llama-message',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
